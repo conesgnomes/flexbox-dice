@@ -1,0 +1,69 @@
+.first-face, .second-face, .third-face, .fourth-face, .fifth-face, .sixth-face {
+  height: 190px;
+  width: 190px;
+  background: white;
+  border-radius: 15px;
+  padding: 10px;
+  border: solid 1px black;
+  display: flex;
+}
+.first-face .column, .second-face .column, .third-face .column, .fourth-face .column, .fifth-face .column, .sixth-face .column {
+  display: flex;
+  flex-direction: column;
+}
+
+.pip {
+  border-radius: 100%;
+  background-color: black;
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+}
+
+.first-face {
+  justify-content: center;
+  align-items: center;
+}
+
+.second-face {
+  justify-content: space-between;
+}
+.second-face .pip:nth-child(2) {
+  align-self: flex-end;
+}
+
+.third-face {
+  justify-content: space-between;
+}
+.third-face .pip:nth-child(2) {
+  align-self: center;
+}
+.third-face .pip:nth-child(3) {
+  align-self: flex-end;
+}
+
+.fourth-face {
+  justify-content: space-between;
+}
+.fourth-face .column {
+  justify-content: space-between;
+}
+
+.fifth-face {
+  justify-content: space-between;
+}
+.fifth-face .column {
+  justify-content: space-between;
+}
+.fifth-face .column:nth-child(2) {
+  justify-content: center;
+}
+
+.sixth-face {
+  justify-content: space-between;
+}
+.sixth-face .column {
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=styles.css.map */

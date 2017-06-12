@@ -1,0 +1,9 @@
+.fifth-face {
+  justify-content: space-between;
+  .column {
+    justify-content: space-between;
+    &:nth-child(2) {
+      justify-content: center;
+    }
+  }
+}

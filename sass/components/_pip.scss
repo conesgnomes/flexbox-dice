@@ -1,0 +1,6 @@
+.pip {
+  border-radius: 100%;
+  background-color: black;
+  @include size(50px);
+  display: inline-block;
+}

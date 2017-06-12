@@ -1,0 +1,20 @@
+$face-map: ('first', 'second', 'third', 'fourth', 'fifth', 'sixth');
+
+%dice {
+  @include size(190px);
+  background: white;
+  border-radius: 15px;
+  padding: 10px;
+  border: solid 1px black;
+  display: flex;
+  .column {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@each $face in $face-map {
+  .#{$face}-face {
+    @extend %dice;
+  }
+}
